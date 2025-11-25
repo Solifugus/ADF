@@ -1,0 +1,45 @@
+# agent:
+id = "assistant-001"
+role = "research_helper"
+version = 2
+
+# agent.profile:
+display_name = "Nova"
+primary_language = en
+fallback_language = en
+max_context_tokens = 16000 (>= 0)
+
+# agent.knowledge:
+domains:
+ai
+philosophy
+physics
+writing
+
+# agent.preferences:
+tone = "casual"
+detail_level = "medium"
+code_style = "commented"
+
+# agent.sessions:
+
+id = "session-abc"
+user_id = "user-123"
+last_active = 2025-11-24T20:10:00Z
+summary = """
+Discussed Augmentable Data Format (ADF) and how to design
+a human- and AI-friendly notation for hierarchical data.
+"""
+
+id = "session-def"
+user_id = "user-123"
+last_active = 2025-11-24T21:02:00Z
+summary = """
+Explored ways to represent constraints and relative sections
+for modular configuration and upgrades.
+"""
+
+# agent.metrics:
+requests_total = 1248 (>= 0)
+tokens_generated = 892312 (>= 0)
+average_response_ms = 430 (>= 0)

@@ -1,0 +1,11 @@
+# article:
+title = "On Augmentable Data Formats"
+
+body = """
+An augmentable data format allows multiple documents
+to extend or refine the same structure without
+introducing conflicts in syntax.
+
+This makes it suitable for configuration overlays,
+AI-generated updates, and progressive system evolution.
+"""

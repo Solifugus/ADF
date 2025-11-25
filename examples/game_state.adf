@@ -1,0 +1,56 @@
+# game:
+title = "Illumera: Echoes of the Archive"
+version = 0.3
+
+# game.player:
+id = 42
+name = "Arlen"
+class = "Archivist"
+level = 7 (>= 1)
+
+# game.player.stats:
+health = 68 (>= 0)
+health_max = 100 (>= 1)
+mana = 32 (>= 0)
+mana_max = 50 (>= 1)
+
+# game.player.inventory:
+
+name = "Rusty Key"
+type = key
+stack = 1 (>= 1)
+
+name = "Essence Shard"
+type = resource
+stack = 7 (>= 0)
+
+name = "Flickering Lantern"
+type = tool
+stack = 1 (>= 1)
+
+# game.world.region:
+id = "north_ridge"
+name = "North Ridge"
+danger_level = 3 (0 <= value <= 10)
+
+# game.world.region.npcs:
+
+id = "hermit_1"
+name = "Old Hermit"
+attitude = neutral
+
+id = "merchant_2"
+name = "Archive Peddler"
+attitude = friendly
+
+# game.log:
+
+"""
+Entered North Ridge.
+"""
+"""
+Spoke with Old Hermit.
+"""
+"""
+Purchased 3 Essence Shards.
+"""

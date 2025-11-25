@@ -1,0 +1,51 @@
+# project:
+name = "Augmentable Data Format"
+short_name = "ADF"
+status = "experimental"
+
+# project.authors:
+
+name = "Matthew"
+role = "originator"
+
+name = "Contributors"
+role = "community"
+
+# project.description = """
+Augmentable Data Format (ADF) is a simple, line-oriented notation
+for hierarchical data that is easy for both humans and AI to read
+and write.
+
+Key properties:
+
+- Uses dot-notation paths instead of braces or brackets
+- Supports absolute (rooted) and relative (relocatable) sections
+- Represents arrays using natural line and blank-line structure
+- Provides intuitive multiline strings with repeated quotes
+- Allows optional constraints to annotate values
+- Enables progressive augmentation and patching of data
+"""
+
+# project.use_cases:
+agent_state
+configuration
+logs
+hierarchical_documents
+patches_and_upgrades
+
+# project.todo:
+
+item = """
+Define a standard library of constraint keywords (e.g., min, max, enum).
+"""
+priority = high
+
+item = """
+Provide a reference parser implementation and conformance tests.
+"""
+priority = medium
+
+item = """
+Explore tooling for visualizing and editing ADF trees.
+"""
+priority = medium

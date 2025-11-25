@@ -1,0 +1,4 @@
+# metrics:
+requests_per_second = 124.8 (>= 0)
+error_rate = 0.012 (0 <= value <= 1)
+status = healthy (enum healthy,degraded,down)

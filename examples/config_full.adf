@@ -1,0 +1,37 @@
+# app:
+name = "StoryWeaver"
+version = 1.0
+
+# app.ui:
+theme = dark
+language = en-US
+
+# app.ui.shortcuts:
+save = "Ctrl+S"
+open = "Ctrl+O"
+quit = "Ctrl+Q"
+
+# app.server:
+host = localhost
+port = 8080 (>= 0)
+use_https = false
+
+# app.features:
+autosave
+spellcheck
+cloud_sync
+
+# app.limits:
+max_projects = 100 (>= 1)
+max_open_tabs = 16 (>= 1)
+
+# app.auth.providers:
+
+name = local
+enabled = true
+
+name = google
+enabled = true
+
+name = github
+enabled = false

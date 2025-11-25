@@ -1,0 +1,8 @@
+# person:
+name = Matthew
+age = 54
+
+# person.location:
+city = Fayetteville
+state = NY
+country = USA
