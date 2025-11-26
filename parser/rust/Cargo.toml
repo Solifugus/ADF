@@ -1,0 +1,30 @@
+[package]
+name = "adf-parser"
+version = "0.1.0"
+edition = "2021"
+authors = ["ADF Contributors"]
+description = "Rust parser for Augmentable Data Format (ADF)"
+license = "MIT"
+repository = "https://github.com/Solifugus/ADF"
+keywords = ["adf", "parser", "config", "serialization", "data-format"]
+categories = ["parser-implementations", "encoding", "config"]
+readme = "README.md"
+
+[lib]
+name = "adf"
+path = "src/lib.rs"
+
+[[bin]]
+name = "adf"
+path = "src/bin/cli.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"], optional = true }
+serde_json = { version = "1.0", optional = true }
+thiserror = "2.0"
+
+[dev-dependencies]
+
+[features]
+default = ["serde"]
+serde = ["dep:serde", "dep:serde_json"]
